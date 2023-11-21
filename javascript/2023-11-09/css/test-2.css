@@ -1,0 +1,32 @@
+#btnRed {
+    accent-color: red;
+}
+
+#btnGreen {
+    accent-color: green;
+}
+
+#btnBlue {
+    accent-color:blue;
+}
+
+#display {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    float: right;
+    background: rgb(20, 20,20);
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+#display > div {
+    font-weight: bold;
+    color: #FFF;
+}
+#info-red,
+#info-green,
+#info-blue {
+    font-weight: normal;
+    color: #FFF;
+}

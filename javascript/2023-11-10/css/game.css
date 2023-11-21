@@ -1,0 +1,97 @@
+#table {
+    background-color: #666;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+#dashboard {
+    background-color: #000;
+    color: #666;
+}
+
+#dashboard #score {
+    color: #FFF;
+}
+
+.card,
+.card-check {
+    width: 80%;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .7), 0 1px 1px 0 #888 inset;
+    ;
+}
+
+.card-check {
+    background-color: #FFF;
+    box-sizing: border-box;
+    padding: 30px 0 0 0;
+    font-size: 140px;
+    line-height: 1;
+    color: purple;
+}
+
+.card-pc {
+    display: none;
+}
+
+.card-user {
+    display: block;
+    cursor: pointer;
+}
+
+.win,
+.loose,
+.equal {
+    width: 80%;
+    min-height: 50px;
+    display: none;
+    color: #FFF;
+    margin: 0 auto;
+    padding: 5px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.win {
+    background-color: green;
+}
+
+.loose {
+    background-color: red;
+}
+.equal {
+    background-color: blue;
+}
+
+.hands {
+    background: transparent;
+    font-family: 'happy_hands', sans-serif;
+    font-size: 200px;
+    line-height: 1;
+    color: #FFF;
+}
+
+#cardloose {
+    background-color: red;
+}
+
+#cardwin {
+    background-color: green;
+}
+
+#user1,
+#user2,
+#user3 {
+    background-color: purple;
+}
+
+#pc1,
+#pc2,
+#pc3 {
+    background-color: orange;
+}

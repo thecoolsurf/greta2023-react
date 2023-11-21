@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRETA - Javascript and ReactJS</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+	<script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/navbar.js" defer></script>
+    <script src="./js/defer.js" defer></script><!--exec after DOM load-->
+</head>
+<body>
+
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
+    <div id="jumbotron" class="jumbotron">
+		<div class="container">
+			<h1 class="playball">Javascript</h1>
+			<h2 class="passion-one">Best practices in Javascript</h2>
+			<h3>2023-11-03 - Leçon #01</h3>
+		</div>
+    </div>
+
+    <div class="container">
+        <button class="btn btn-primary" id="btn1" onclick="alert('je suis dans une balise button');">Click me</button>
+        <button class="btn btn-success" id="btn2">Click me</button>
+        <button class="btn btn-warning" id="btn3">Click me</button>
+        <button class="btn btn-danger" id="btn4">Click me</button>
+        <button class="btn btn-secondary" id="btn5">Click me</button>
+    </div>
+    <br>
+    <div class="container">
+        <h4>STRING: valeur de caractères</h4>
+        <pre><code>let str = 'string123456';</code></pre>
+    </div>
+    <br>
+    <div class="container">
+        <h4>INT: valeur numéraire</h4>
+        <pre><code>let str = 123456;</code></pre>
+    </div>
+    <br>
+    <div class="container">
+        <h4>OBJ: valeur object</h4>
+        <pre><code>let user1 = {
+            lastname: 'DOUIN',
+            firstname: 'Hubert',
+            age: 57,
+            dev: true,
+        };</code></pre>
+    </div>
+    
+    <script>
+        console.log('js depuis une balise SCRIPT');
+    </script>
+    <script src="js/default.js"></script>
+    <script src="js/definitions.js"></script>
+    
+</body>

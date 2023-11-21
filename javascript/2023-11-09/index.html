@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GRETA - Javascript and ReactJS</title>
+	<link rel="shurtcut icon" href="../images/favicon-js.png" type="image/png" />
+	<link rel="stylesheet" href="../css/bootstrap.css" />
+	<link rel="stylesheet" href="../css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+	<link rel="stylesheet" href="../css/default.css" />
+	<script src="../js/jquery-3.7.1.min.js"></script>
+	<script src="../js/bootstrap.bundle.js"></script>
+	<script src="../js/navbar.js" defer></script>
+
+	<script src="./js/events-v2.js" defer></script>
+	<script src="./js/inputs.js" defer></script>
+	<script src="./js/test-1.js" defer></script>
+	<script src="./js/test-2.js" defer></script>
+	<script src="./js/test-3.js" defer></script>
+	<script src="./js/test-4.js" defer></script>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
+	<div id="jumbotron" class="jumbotron">
+		<div class="container">
+			<h1 class="playball">Javascript</h1>
+			<h2 class="passion-one">Best practices in Javascript</h2>
+			<h3>2023-11-09 - Leçon #05</h3>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2>Exercice #1</h2>
+		<p>Cliquez sur le bouton pour modifier son attribut.</p>
+		<div class="row">
+			<button type="button" id="btn1" class="btn btn-primary">Click me</button>
+		</div>
+	</div>
+
+	<hr class="hr hr-blurry" />
+
+	<div class="container">
+		<h2>Exercice #2</h2>
+		<div class="row">
+			<div style="width: 100%;">
+				<legend>Cliquez sur le soleil ou la lune</legend>
+			</div>
+			<div id="bg-dark">
+				<div id="lune"></div>
+				<div id="soleil"></div>
+				<h3>Dark mode</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit explicabo voluptate labore
+					consequuntur provident autem laudantium,
+					soluta esse! Quas facilis eaque perspiciatis quam, illum recusandae ut consequatur! Veniam, sed
+					perferendis.
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit explicabo voluptate labore
+					consequuntur provident autem laudantium,
+					soluta esse! Quas facilis eaque perspiciatis quam, illum recusandae ut consequatur! Veniam, sed
+					perferendis.
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit explicabo voluptate labore
+					consequuntur provident autem laudantium,
+					soluta esse! Quas facilis eaque perspiciatis quam, illum recusandae ut consequatur! Veniam, sed
+					perferendis.
+				</p>
+			</div>
+		</div>
+	</div>
+	<hr class="hr hr-blurry" />
+
+	<div class="container">
+		<h2>Exercice #3</h2>
+		<P>Cliquez sur le bouton pour afficher ou masquer la liste.</P>
+		<div class="row">
+			<ul class="list" id="list">
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+				<li>Item 4</li>
+				<li>Item 5</li>
+				<li>Item 6</li>
+			</ul>
+		</div>
+		<button id="btn2" type="button" class="btn btn-primary">Click me</button>
+	</div>
+
+	<hr class="hr hr-blurry" />
+
+	<div class="container">
+		<h2>Exercice #4</h2>
+		<div id="display">
+			<div>R: <span id="info-red">0</span></div>
+			<div>G: <span id="info-green">0</span></div>
+			<div>B: <span id="info-blue">0</span></div>
+		</div>
+		<div class="row">
+			<form id="colorSelect">
+				<p><input type="range" min="0" max="255" id="btnRed"></p>
+				<p><input type="range" min="0" max="255" id="btnGreen"></p>
+				<p><input type="range" min="0" max="255" id="btnBlue"></p>
+				<p><input type="button" class="btn btn-primary" id="resetColor" value="RESET"></p>
+			</form>
+		</div>
+	</div>
+
+	<hr class="hr hr-blurry" />
+
+	<div class="container">
+		<h2>Exercice #5</h2>
+		<div class="row">
+			<form class="form">
+				<fieldset>
+					<p>
+						<legend>Formulaire</legend>
+					</p>
+					<p><label>Login</label><input type="text" id="login"></p>
+					<p><label>Password</label><input type="password" id="password"></p>
+					<p><button class="btn btn-primary" type="submit" id="submit">SUBMIT</button></p>
+					<p><button class="btn btn-primary" type="reset" id="reset">RESET</button></p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+</body>
+
+</html>

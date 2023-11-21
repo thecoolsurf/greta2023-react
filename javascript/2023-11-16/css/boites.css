@@ -1,0 +1,38 @@
+h1 {
+    background-color:rgb(88, 177, 88);
+    color: rgb(255, 184, 53);
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+p {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    border: solid 2px #000;
+    color: #000;
+    border-radius: 10px;
+}
+
+/* TYPE BLOCK */
+/*
+Prend toute la largeur du contenu
+Se met a la ligne
+
+En mode BLOCK, les marges TOP et BOTTOM de s'additionnent pas entre elles.
+Seule la plus grande valeur est prise en compte pour les deux.
+
+<p> <h1>...<h6> <ul> <div> 
+<header><footer>...
+*/
+
+/* ******************************************************************* */
+/* TYPE INLINE */
+/*
+Ne prend que la largeur du contenu
+Se met a la suite des autres
+
+<span> <a>
+*/

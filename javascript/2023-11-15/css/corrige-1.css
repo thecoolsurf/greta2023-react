@@ -1,0 +1,39 @@
+
+body {
+    background-color: #252525;
+}
+
+.buttons {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button {
+    padding: 1.8em 2.3em;
+    margin: 0.5rem;
+    border-radius: 0.3em;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+button:active {
+    transform:scale(0.9)
+}
+
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+}
+
+.colors div {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.2rem;
+}

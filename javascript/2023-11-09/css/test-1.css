@@ -1,0 +1,35 @@
+#bg-dark {
+    box-sizing: border-box;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.bg-light {
+    background-color: #FFF;
+    color: #000;
+}
+.bg-dark {
+    background-color: #555;
+    color: #FFF;
+}
+
+#lune {
+    background: #999;
+    width: 80px;
+    height: 80px;
+    margin: 0 0 20px 0;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+}
+
+#soleil {
+    background: yellow;
+    width: 80px;
+    height: 80px;
+    margin: 0 0 20px 0;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+
+}

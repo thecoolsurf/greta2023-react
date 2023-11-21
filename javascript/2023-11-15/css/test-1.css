@@ -1,0 +1,33 @@
+#contain {
+    position: relative;
+    background-color: #888;
+    width: 80%;
+    min-height: 400px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px auto 0 auto;
+}
+.bubbles {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 3px 5px rgba(0,0,0,.7),0 1px 1px 0 #888 inset
+}
+#btn1, #btn2, #btn3, #btn4 {
+    display: none;
+}
+
+.blue {
+    background-color: #007bff;
+}
+
+.yellow {
+    background-color: #e0a800;
+}
+
+.red {
+    background-color: #c82333;
+}
+
+.green {
+    background-color: #1e7e34;
+}

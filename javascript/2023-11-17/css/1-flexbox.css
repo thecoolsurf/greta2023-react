@@ -1,0 +1,96 @@
+/* ********************************************************************* */
+/* MEDIA QUERY */
+h6 {
+    font-size: 4vw; /* viewport width en rapport a la largeur ecran */
+    font-size: 4vh; /* viewport height en rapport a la hauteur ecran */
+}
+h5 {
+    font-size: 4vw; /* clamp(1rem, 4vw, 2rem) */
+}
+
+
+
+/* ********************************************************************* */
+/* FLEXBOX */
+
+/*
+On doit activé la propriete flex dans le container parent
+pour beneficier des fonctions FLEXBOX
+*/
+.main {
+    display: flex;
+    /*height: 100vh;*/ /* prend toute la heuteur de la frame */
+    /*
+    inverser le sens des elements
+    flex-direction: row | row-reverse | column | column-reverse
+    flex-direction: column;
+    */
+    /*
+    permet d'envoyer les elements a la ligne
+    flex-wrap: wrap | wrap-reverse | nowrap
+    */
+    flex-wrap: wrap; /* a la ligne ou non */
+    
+    /* aligne horizontal */
+    /* start | center | space-between | space-around | space-evenly */
+    justify-content: start;
+
+    /* aligne vertical */
+    /* start | center | end | stretch*/
+    align-items: start;
+}
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 0 20px;
+}
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: start;
+    background: #666;
+    width: 250px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0.5rem;
+}
+.flex-box .image {
+    background: #000;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.flex-box .image img {
+    width: 100%;
+    height: auto;
+}
+.flex-box .infos {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 1rem 0 1rem;
+}
+.flex-box .title {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFF;
+}
+.flex-box .schedule {
+    width: 100%;
+    font-size: 1.0rem;
+    color: #FFF;
+}
+.flex-box .address {
+    width: 100%;
+    font-size: 1.0rem;
+    color: #FFF;
+}
+.flex-box .backtop {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+}

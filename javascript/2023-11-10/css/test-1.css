@@ -1,0 +1,38 @@
+#ardoise {
+    background-color: #666;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#brush1 {
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%); /* deplacement par rapport à l'origine */
+}
+
+.brush2 {
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color:#FFF;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* *************************************************** */
+
+.mouse-move {
+    background-color:blue;
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,9 @@
+/* *********************************************************************** */
+/* REGLES CSS */
+
+/* taille standard pour la police de caractere */
+.texte {
+    font-size: 16px;
+    font-size: 1.5rem; /* x1.5 la valeur de reference dans le navigateur */
+    font-weight: 400; /* valeur par defaut dans le navigateur */
+}
