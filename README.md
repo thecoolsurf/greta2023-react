@@ -1,2 +1,2 @@
 # greta2023-react
-GRETA2023-REACT
+Formation Javascript et ReactJS au Greta92.
