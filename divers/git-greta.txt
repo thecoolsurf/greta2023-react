@@ -9,7 +9,7 @@ git init
 git add .
 git config --global user.email "hdouin@free.fr"
 git commit -m "Premiere sauvegarde"
-git push origin master
+git push origin main
 ->user:thecoolsurf
 ->pass:githubForMe@2023
 -----------------------------------------------------------------------
