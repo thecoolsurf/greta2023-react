@@ -1,4 +1,4 @@
-# GRETA92 - Formation Javscript et ReactJS.
+# GRETA92 - Formation Javascript et ReactJS.
 Formation Javascript et ReactJS au Greta92.
 
 ## Objectifs
