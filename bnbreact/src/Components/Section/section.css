@@ -1,0 +1,11 @@
+.section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  
