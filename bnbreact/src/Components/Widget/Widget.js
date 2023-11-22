@@ -13,14 +13,15 @@ import img7 from '../../assets/images/img7.webp';
 const pathToImg = '../../assets/images/';
 
 const Widget = (props) => {
-    let datas = props.datas;
+    console.log(props);
     return (
         <div className="widget">
             <div className="heart"><i className="fa-light fa fa-heart"></i></div>
             <div className="picture">
-                <img src={datas.img} title={datas.img} alt={datas.img} />
+                <img src={props.img} title={props.img} alt={props.img} />
             </div>
-            <div className="country">Stege, <span>Danemark</span>.</div>
+            <div className="country">{props.city}, <span>{props.country}</span>.</div>
+            <Pager/>
         </div>
 
     )

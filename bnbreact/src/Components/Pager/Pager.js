@@ -1,3 +1,5 @@
+import './pager.css';
+
 export const Pager = () => {
     return (
         <div className="pager">
