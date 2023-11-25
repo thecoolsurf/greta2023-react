@@ -1,0 +1,47 @@
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.infos h2 {
+  width: 50%;
+  text-align: center;
+  border-bottom: solid 1px #999;
+}
+.nexts {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 4rem 0;
+}
+.nexts .rows {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.nexts .rows .picture {
+  width: 150px;
+  height: 150px;
+  margin: 0 1rem;
+}
+.dog1 {
+  background-image: url('../../../public/images/next-1.avif');
+  background-position: center center;
+  background-size: cover;
+}
+.dog2 {
+  background-image: url('../../../public/images/next-2.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+.dog3 {
+  background-image: url('../../../public/images/next-3.jpg');
+  background-position: center center;
+  background-size: cover;
+}

@@ -1,0 +1,68 @@
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.infos h2 {
+  width: 50%;
+  text-align: center;
+  border-bottom: solid 1px #999;
+}
+.circles {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 4rem 0;
+}
+.circles .rows {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.circles .rows .row {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content:flex-start;
+  align-items:center;
+}
+.circles .rows .row .circle {
+  width: 200px;
+  height: 200px;
+  margin: 0 1rem;
+  border-radius: 50%;
+}
+.circles .rows .row .legend {
+  font-size: 2rem;
+}
+.bkg-orange {
+  background: orange;
+}
+.bkg-dog1 {
+  background-image: url('../../../public/images/dog-1.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+.bkg-dog2 {
+  background-image: url('../../../public/images/dog-2.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+.bkg-lion {
+  background-image: url('../../../public/images/lion.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+.display {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+

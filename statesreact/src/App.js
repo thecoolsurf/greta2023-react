@@ -1,5 +1,9 @@
 import './App.css';
 import { useState } from 'react';
+import { Counters } from './Components/Counters/Counters.js';
+import { Squares } from './Components/Squares/Squares.js';
+import { Circles } from './Components/Circles/Circles.js';
+import { Next } from './Components/Next/Next.js';
 
 function App() {
 
@@ -9,19 +13,11 @@ function App() {
 
   return (
     <div className="App">
-      <div className="main">
-        <div className="infos">
-          <h1>COMPTEURS</h1>
-          <h2>Exercice #2</h2>
-          <ul>
-            <li>Faire des carres de couleurs. En cliquant dessus, ils changent de couleurs ou reprennent leur couleurs.</li>
-          </ul>
-        </div>
-        <div className="rows">
-          <div onClick={() => { setSelector(0); }} className = {selector === 0 ? 'bkg-green' : 'bkg-orange'}></div>
-          </div>
-        </div>
-      </div>
+      <Counters />
+      <Squares/>
+      <Circles/>
+      <Next/>
+    </div>
   );
 }
 

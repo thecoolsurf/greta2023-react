@@ -1,0 +1,40 @@
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.infos h2 {
+  width: 50%;
+  text-align: center;
+  border-bottom: solid 1px #999;
+}
+.squares {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 4rem 0;
+}
+.squares .rows {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.squares .rows .square {
+  margin: 0 1rem;
+}
+.bkg-orange, .bkg-green {
+    width: 100px;
+    height: 100px;
+  }
+  .bkg-orange {
+    background: orange;
+  }
+  .bkg-green {
+    background: green;
+  }
