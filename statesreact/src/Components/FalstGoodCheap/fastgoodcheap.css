@@ -27,17 +27,6 @@ input[type="checkbox"]+label {
 
 /* ********************************************************************** */
 
-
-* {
-    -webkit-tap-highlight-color: transparent;
-}
-
-@keyframes showMe {
-    to {
-        visibility: visible;
-    }
-}
-
 input[type="checkbox"] {
     position: relative;
     top: 40px;
@@ -97,7 +86,10 @@ body.has-js input[type="checkbox"]:checked:focus+label.blue:after {
     text-align: center;
 }
 
-input[type="checkbox"]:checked~input[type="checkbox"]:checked~input[type="checkbox"]:checked~.such-an-elite-hacker {
+input[type="checkbox"]:checked,
+input[type="checkbox"]:checked,
+input[type="checkbox"]:checked,
+.such-an-elite-hacker {
     display: block;
 }
 

@@ -9,11 +9,19 @@ export const FastGoodCheap = () => {
 
     const [total, setTotal] = useState(0);
 
+    const checkRed = ['red:before','red:after'];
+    const checkGreen = ['green:before','green:after'];
+    const checkBlue = ['blue:before','blue:after'];
+
     return (
         <div className="fastgoodcheap">
             <div className="row">
                 <input type="checkbox" id="fast" onClick={() => {
                         setFast(1);
+                        setTotal(fast+good+cheap);
+                        if (total > 3) {
+
+                        }
                     }
                 } />
                 <label className="red" for="fast">FAST</label>

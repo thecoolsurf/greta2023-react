@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './Components/Home/Home.js';
 import { Header } from './Components/Header/Header.js';
+import { Footer } from './Components/Footer/Footer.js';
 import { Counters } from './Components/Counters/Counters.js';
 import { Squares } from './Components/Squares/Squares.js';
 import { Circles } from './Components/Circles/Circles.js';
@@ -26,6 +27,7 @@ function App() {
         <Route path="next" element={<Next />} />
         <Route path="fastgoodcheap" element={<FastGoodCheap />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
