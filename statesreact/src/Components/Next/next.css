@@ -31,17 +31,17 @@
   margin: 0 1rem;
 }
 .dog1 {
-  background-image: url('../../../public/images/next-1.avif');
+  background-image: url('../../../public/assets/gallery/next-1.avif');
   background-position: center center;
   background-size: cover;
 }
 .dog2 {
-  background-image: url('../../../public/images/next-2.jpg');
+  background-image: url('../../../public/assets/gallery/next-2.jpg');
   background-position: center center;
   background-size: cover;
 }
 .dog3 {
-  background-image: url('../../../public/images/next-3.jpg');
+  background-image: url('../../../public/assets/gallery/next-3.jpg');
   background-position: center center;
   background-size: cover;
 }

@@ -1,0 +1,14 @@
+.header .nav a {
+  background: #FFF;
+  color: #999;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: solid 1px #999;
+  border-radius: 5px;
+}
+
+.header .nav a:hover {
+  background: #555;
+  color: #FFF;
+}
