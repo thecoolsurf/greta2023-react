@@ -1,4 +1,5 @@
-import {logo,title,baseline} from '../../Components/Datas/DatasHeader.js';
+import logo from '../../assets/images/logo.png';
+import {title,baseline} from '../../Components/Datas/DatasHeader.js';
 import { Navigation } from '../../Components/Navigation/Navigation.js';
 import './header.css';
 

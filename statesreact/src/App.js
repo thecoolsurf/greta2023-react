@@ -7,6 +7,7 @@ import { Counters } from './Components/Counters/Counters.js';
 import { Squares } from './Components/Squares/Squares.js';
 import { Circles } from './Components/Circles/Circles.js';
 import { Next } from './Components/Next/Next.js';
+import { FastGoodCheap } from './Components/FalstGoodCheap/FastGoodCheap.js';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="squares" element={<Squares />} />
         <Route path="circles" element={<Circles />} />
         <Route path="next" element={<Next />} />
+        <Route path="fastgoodcheap" element={<FastGoodCheap />} />
       </Routes>
     </BrowserRouter>
   );
