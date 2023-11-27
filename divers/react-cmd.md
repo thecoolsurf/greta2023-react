@@ -26,3 +26,20 @@ La source du site est dans SRC App.js
 
 Note
 Le HTML dans ReactJS s'appelle JSI
+
+### Update
+
+Aller à la racine du projet
+```
+cd /path/to/your/project
+```
+
+Mise à jour des dépendances
+```
+npm install
+```
+
+Install module router
+```
+npm install react-router-dom
+```

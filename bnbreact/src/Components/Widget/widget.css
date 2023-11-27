@@ -1,0 +1,56 @@
+.section .widget {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30vw;
+    height: 30vw;
+    margin: 0 10px 20px 10px;
+  }
+  
+  .section .widget .heart {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    opacity: 0.5;
+  }
+  
+  .section .widget .heart .fa-heart {
+    font-size: 2rem;
+  }
+  
+  .section .widget .picture {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: #999;
+    width: 100%;
+    height: 20rem;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .section .widget .picture img {
+    width: 150%;
+    height: auto;
+    align-items: center;
+  }
+  
+  .section .widget .country {
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  
+  .section .widget .country span {
+    font-weight: bold;
+  }
+    
