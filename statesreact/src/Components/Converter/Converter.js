@@ -1,11 +1,9 @@
 import './converter.css';
 import { useState } from 'react';
-import { Parities } from '../Datas/DatasParities.js';
 import { Selector } from './Selector.js';
+import { DatasRates } from '../Datas/DatasRates.js';
 
 export const Converter = () => {
-
-    console.log(Parities);
 
     const [val1, setVal1] = useState('');
     const [res1, setRes1] = useState(0);
@@ -31,9 +29,8 @@ export const Converter = () => {
                     }
                     } />
                 </div>
-
                 <div className="row">
-                    <div className="title">vers USD</div>
+                    <div className="title">vers Dollar</div>
                     <input type="text" value={res1} />
                 </div>
             </div>
@@ -42,7 +39,7 @@ export const Converter = () => {
             <div className="rows">
                 <h1>Converter #2</h1>
                 <div className="row">
-                    <div className="title">Conversion de EUROS</div>
+                    <div className="title">Conversion de Euro vers Dollar</div>
                     <input type="text" value={val2} onChange={(e) => {
                         let val = e.target.value;
                         setVal2(val);
@@ -51,7 +48,7 @@ export const Converter = () => {
                     } />
                 </div>
                 <div className="row">
-                    <div className="title">vers USD</div>
+                    <div className="title">Conversion de Dollar vers Euro</div>
                     <input type="text" value={res2} onChange={(e) => {
                         let val = e.target.value;
                         setVal2(val * parityUSDtoEURO);
@@ -66,7 +63,7 @@ export const Converter = () => {
                 <div className="row">
                     <div className="title">
                         <select className="selector">
-                            <Selector country={Parities.country} rate={Parities.rate} />
+                            <Selector country={DatasRates.country} rate={DatasRates.rate} />
                         </select>
                     </div>
                     <input type="text" value={res1} />

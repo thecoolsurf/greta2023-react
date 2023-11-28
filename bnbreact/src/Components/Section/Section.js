@@ -5,7 +5,7 @@ import './section.css';
 export const Section = () => {
     return (
         <section className="section">
-            <Widget city={DatasSection.city} country={DatasSection.country} image={DatasSection.image} />
+            <Widget datas={DatasSection} />
         </section>
     )
 }

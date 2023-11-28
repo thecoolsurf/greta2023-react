@@ -1,5 +1,5 @@
 export const Selector = (props) => {
-    // console.log(props.country);
+    console.log(props);
     return (
         <option value={props.country}>{props.rate}</option>
     )
