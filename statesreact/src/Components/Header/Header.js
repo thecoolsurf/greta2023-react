@@ -6,11 +6,11 @@ import './header.css';
 export const Header = () => {
     return (
         <header className="header">
-            <Navigation />
-            <div className="baseline"><a href="/">{baseline}</a></div>
             <div className="logo">
                 <img src={logo} title={title} />
             </div>
+            <Navigation />
+            <div className="baseline"><a href="/">{baseline}</a></div>
         </header>
     )
 }
