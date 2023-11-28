@@ -5,4 +5,4 @@ Cours en ligne et structure de la formation en ligne\
 
 
 Liens vers les exercices\
-[Exercices](https://statesexercices.netlify.app/)
+[statesexercicees.netlify.app](https://statesexercices.netlify.app/)

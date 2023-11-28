@@ -2,7 +2,6 @@ import { Pager } from '../../Components/Pager/Pager.js';
 import './widget.css';
 
 const Widget = (props) => {
-    console.log(props.city);
     return (
         <div className="widget">
             <div className="heart"><i className="fa-light fa fa-heart"></i></div>
