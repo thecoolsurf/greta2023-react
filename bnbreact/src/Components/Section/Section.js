@@ -5,7 +5,11 @@ import './section.css';
 export const Section = () => {
     return (
         <section className="section">
-            <Widget datas={DatasSection} />
+            {DatasSection.map((item) =>{
+                return (
+                    <Widget country={item.country} city={item.city} image={item.image} />
+                )
+            })}
         </section>
     )
 }
