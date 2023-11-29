@@ -11,6 +11,8 @@ import { Next } from './Components/Next/Next.js';
 import { FastGoodCheap } from './Components/FalstGoodCheap/FastGoodCheap.js';
 import { Configurator } from './Components/Configurator/Configurator.js';
 import { Converter } from './Components/Converter/Converter.js';
+import { Javascript } from './Components/Revision/Javascript.js';
+import { ToDoList } from './Components/ToDoList/ToDoList.js';
 
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
         <Route path="fastgoodcheap" element={<FastGoodCheap />} />
         <Route path="configurator" element={<Configurator />} />
         <Route path="converter" element={<Converter />} />
+        <Route path="javascript" element={<Javascript />} />
+        <Route path="todolist" element={<ToDoList />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
