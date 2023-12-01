@@ -1,8 +1,16 @@
+.header .nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 65vw;
+}
 .header .nav a {
   background: none;
   color: #FFF;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 5px 10px 5px;
   padding: 5px 10px;
   border: solid 1px #FFF;
   border-radius: 5px;

@@ -1,0 +1,3 @@
+arr1 = ['maison','camion','marteau','cabat'];
+arr2 = arr1.filter((el) => el.match(/^ma/);
+console.log(arr2);

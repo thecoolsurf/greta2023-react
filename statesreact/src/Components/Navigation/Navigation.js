@@ -13,6 +13,7 @@ export const Navigation = () => {
             <Link to="Configurator">Configurator</Link>
             <Link to="Converter">Converter</Link>
             <Link to="Javascript">Javascript</Link>
+            <Link to="Modale">Modale</Link>
             <Link to="ToDoList">ToDoList</Link>
         </div>
     );

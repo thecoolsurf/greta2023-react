@@ -3,21 +3,32 @@ import { useState } from 'react';
 
 export const ToDoList = () => {
 
-    const [tasks, setTasks] = useState(['Tache 1', 'Tache 2']);
+    const [tasks, setTasks] = useState(['Maison', 'Camion', 'Cabat', 'Marteau']);
     const [newTask, setNewTask] = useState('');
     const [search, setSearch] = useState('');
+    const arrSearch = [];
+
+    // const arr1 = ['maison','camion','marteau','cabat'];
+    // const arr2 = arr1.filter((el) => el.match(/^Ma/i));
+    // console.log(arr1);
+    // console.log(arr2);
 
     return (
         <div className="todolist">
             <h1>✨ 🌟 ⭐️ TO DO LIST ⭐️ 🌟 ✨</h1>
             <div className="search">
-                <input type="text" value={search} placeholder="Recherche..." onChange={(e) => {
-                    let str = e.target.value;
-                    console.log(str);
-                    const array = JSON.parse(JSON.stringify(tasks));
-                    const regex = /[str]/g;
-                    array.find((word) => word.match(regex));
-                    setTasks(array);
+                <input type="text" value={search} onChange={(e) => {
+                    const arr1 = JSON.parse(JSON.stringify(tasks));
+                    console.log(arr1);
+                    setTasks(arr1);
+                    arrSearch.push(e.target.value);
+                    let str = arrSearch.join();
+                    setSearch(str);
+                    let regex = new RegExp(`${str}`,'gi');
+                    const arr2 = arr1.filter((el) => el.match(regex));
+                    if (arrSearch.length > 0) {
+                        setTasks(arr2);
+                    }
                 }} />
                 <i className="fa fa-search" aria-hidden="true"></i>
             </div>
@@ -41,7 +52,7 @@ export const ToDoList = () => {
 
                 </ul>
                 <div className="more">
-                    <input type="text" value={newTask} placeholder="Nouvelle tache..." onChange={(e) => {
+                    <input type="text" value={newTask} onChange={(e) => {
                         let val = e.target.value;
                         setNewTask(val);
                     }} />
@@ -51,6 +62,7 @@ export const ToDoList = () => {
                             array.push(newTask);
                             array.sort();
                             setTasks(array);
+                            setNewTask('');
                         }
                     }} />
                 </div>
