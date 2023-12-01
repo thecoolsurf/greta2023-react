@@ -3,15 +3,15 @@ import { useState } from 'react';
 
 export const ToDoList = () => {
 
-    const [tasks, setTasks] = useState(['Maison', 'Camion', 'Cabat', 'Marteau']);
+    const [tasks, setTasks] = useState([
+        {name:'Maison à ranger',done:true},
+        {name:'Camion à garer',done:false},
+        {name:'Cabat à remplir',done:true},
+        {name:'Marteau à utiliser',done:false}
+    ]);
     const [newTask, setNewTask] = useState('');
     const [search, setSearch] = useState('');
     const arrSearch = [];
-
-    // const arr1 = ['maison','camion','marteau','cabat'];
-    // const arr2 = arr1.filter((el) => el.match(/^Ma/i));
-    // console.log(arr1);
-    // console.log(arr2);
 
     return (
         <div className="todolist">
@@ -37,15 +37,15 @@ export const ToDoList = () => {
                 <ul className="lists">
                     {tasks.map((item) => {
                         return (
-                            <li>
+                            <li className={item.done ? "task" : "task done"}>
                                 <div className="close">
-                                    <i className="fa fa-times" aria-hidden="true" onClick={(i) => {
+                                    <i className="fa fa-trash" aria-hidden="true" onClick={(i) => {
                                         const array = JSON.parse(JSON.stringify(tasks));
                                         array.splice(1, 1);
                                         setTasks(array);
                                     }}></i>
                                 </div>
-                                <p className="task">{item}</p>
+                                <p>{item.name}</p>
                             </li>
                         )
                     })}

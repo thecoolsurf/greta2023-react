@@ -59,11 +59,12 @@
 }
 
 .lists {
+    min-width: 40vw;
     margin: 0 0 30px 0;
     padding: 0;
 }
 
-.lists li {
+.lists .task {
     background-color: #fff9c4;
     position: relative;
     display: flex;
@@ -71,30 +72,38 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    min-width: 50vw;
+    width: 100%;
     min-height: 40px;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
     box-shadow: 5px 5px 10px #888;
 }
 
-.lists li p {
+.lists .done {
+    background: #cecece;
+    color: #555;
+}
+.lists .task p {
     font-family: 'Dancing Script', sans-serif;
     font-size: 2rem;
     line-height: 1.2;
 }
 
-.lists li .close {
+.lists .task .close {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
     position: absolute;
     top: 5px;
     right: 5px;
     z-index: 1;
     width: 30px;
     height: 30px;
-    border-radius: 15px;
-    border: solid 2px #000;
+    border-radius: 5px;
 }
 
-.lists li .close .fa-times {
+.lists .task .close .fa-times {
     position: absolute;
     top: 2px;
     right: 2px;
@@ -108,11 +117,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 35vw;
     margin: 0 0 0 20px;
 }
 
 .more input[type="text"] {
-    min-width: 300px;
+    width: 100%;
     min-height: 200px;
     height: 40px;
     padding: 10x;
