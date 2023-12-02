@@ -1,12 +1,16 @@
-.header .nav {
+.nav {
+  background:#222;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 65vw;
+  justify-content:center;
+  align-items:flex-start;
+  align-content: flex-start;
+  width: 100%;
+  padding: 10px 0 0 0;
+  box-sizing: border-box;
 }
-.header .nav a {
+.nav a {
   background: none;
   color: #FFF;
   text-decoration: none;
@@ -15,8 +19,7 @@
   border: solid 1px #FFF;
   border-radius: 5px;
 }
-
-.header .nav a:hover {
+.nav a:hover {
   background: #FFF;
-  color:#18BCEE;
+  color:#000;
 }
