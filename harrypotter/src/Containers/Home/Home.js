@@ -1,10 +1,20 @@
 import './home.css';
-import { Baseline } from '../../Containers/Home/Datas.js';
-export const Home = () => {
+import { useLocation } from 'react-router-dom';
+import { Navigation } from '../../Components/Navigation/Navigation.js';
+import { Header } from '../../Components/Header/Header.js';
+import { Footer } from '../../Components/Footer/Footer.js';
 
+export const Home = () => {
+    const location = useLocation()
+    let url = 'Home';
     return (
         <div className="home">
-            <h1>{Baseline}</h1>
+            <Navigation />
+            <Header url={url} />
+            <div className="texte">
+                Home
+            </div>
+            <Footer />
         </div>
     )
 }

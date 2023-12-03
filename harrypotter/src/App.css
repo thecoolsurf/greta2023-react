@@ -4,6 +4,7 @@ body {
 }
 
 .main {
+  position: relative;
   background: #FFF;
   display: flex;
   flex-direction: column;

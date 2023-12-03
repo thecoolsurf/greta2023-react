@@ -1,4 +1,9 @@
-.header {
-  max-height: 200px;
-  height: 20vw;
+.gryffindor {
+    padding: 20px 30px;
+    box-sizing: border-box;
 }
+
+.gryffindor .header {
+    height: 30vw;
+}
+

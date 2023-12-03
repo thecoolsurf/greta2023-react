@@ -1,8 +1,8 @@
 .header {
-    height: 50vw;
-    min-height: 600px;
-  }
-  .home {
-    padding: 30px 0;
-    box-sizing: border-box;
-  }
+  height: 50vw;
+}
+
+.home {
+  padding: 30px 0;
+  box-sizing: border-box;
+}
