@@ -1,7 +1,10 @@
 import './navigation.css';
+import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 export const Navigation = () => {
+    const location = useLocation()
+    let url = location.pathname.toLowerCase().replace('/', '');
     return (
         <div className="nav">
             <Link to="/">Home</Link>

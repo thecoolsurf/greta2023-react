@@ -13,6 +13,7 @@ import { Configurator } from './Components/Configurator/Configurator.js';
 import { Converter } from './Components/Converter/Converter.js';
 import { Javascript } from './Components/Revision/Javascript.js';
 import { Modale } from './Components/Modale/Modale.js';
+import { Movers } from './Components/Movers/Movers.js';
 import { ToDoList } from './Components/ToDoList/ToDoList.js';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route path="converter" element={<Converter />} />
         <Route path="javascript" element={<Javascript />} />
         <Route path="modale" element={<Modale />} />
+        <Route path="movers" element={<Movers />} />
         <Route path="todolist" element={<ToDoList />} />
       </Routes>
       <Footer/>

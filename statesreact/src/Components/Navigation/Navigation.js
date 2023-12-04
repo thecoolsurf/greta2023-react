@@ -14,6 +14,7 @@ export const Navigation = () => {
             <Link to="Converter">Converter</Link>
             <Link to="Javascript">Javascript</Link>
             <Link to="Modale">Modale</Link>
+            <Link to="Movers">Movers</Link>
             <Link to="ToDoList">ToDoList</Link>
         </div>
     );

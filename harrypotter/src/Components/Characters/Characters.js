@@ -1,16 +1,38 @@
 import "./characters.css";
-import Card from "../Card";
+import Card from "../Card/Card.js";
+import { useState } from "react";
 
-const Characters = (props) => {
-  // le tableau de data est props.data
-
+export const Characters = (props) => {
+  const total = props.datas.name;
+  console.log(total);
+  const incr = 200;
+  const [index,setIndex] = useState(1);
+  const [margX,setMargX] = useState(0);
   return (
-    <div className="CharactersContainer">
-      {props.data.map((character) => {
-        return <Card character={character} />;
-      })}
-    </div>
+    <section className="characters">
+      <div className="category">{props.url}</div>
+      <div className="prev" onClick={() => {
+        setIndex(0);
+        setIndex(index+1);
+        setMargX(-(index*incr));
+        console.log(index, margX);
+
+      }}>
+        <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+      </div>
+      <div className="next" onClick={() => {
+        setIndex(0);
+        setIndex(index+1);
+        setMargX(index*incr);
+        console.log(index,margX);
+      }}>
+        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+      </div>
+      <div className="wrapper" style={{marginLeft: margX + 'px'}}>
+        {props.datas.map((character) => {
+          return <Card character={character} />;
+        })}
+      </div>
+    </section>
   );
 };
-
-export default Characters;

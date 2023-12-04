@@ -7,10 +7,7 @@ import logo_slytherin from '../../assets/images/blasons-04.png';
 
 import { header_title, header_baseline } from './Datas.js';
 
-export const Header = (props) => {
-    let url = props.url;
-    let classHeader = url+' header';
-    console.log(classHeader);
+export const Header = () => {
     return (
         <header className="header">
             <img src={bkg_potter} title="Harry Potter" />

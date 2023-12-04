@@ -1,28 +1,17 @@
 import { useState } from "react";
 import "./card.css";
-import Modale from "../Modal";
+import { Modal } from '../Modal/Modal.js';
 
 const Card = (props) => {
   const [show, setShow] = useState(false);
-
   return (
-    <>
-      {/* # # # # # # # LA CARTE # # # # # # # */}
-      <div
-        className="card"
-        onClick={() => {
-          setShow(true);
-        }}
-      >
-        <img src={props.character.image} />
-        <span className="legend"> {props.character.name} </span>
-      </div>
-
-      {/* # # # # # # #  LA MODALE # # # # # # #  */}
-      {show === true ? (
-        <Modale character={props.character} setShow={setShow} />
-      ) : null}
-    </>
+    <div className="card" onClick={() => {
+      console.log('click');
+      return <Modal datas={props.character} />
+    }}>
+      <img src={props.character.image} />
+      <span className="legend"> {props.character.name} </span>
+    </div>
   );
 };
 
