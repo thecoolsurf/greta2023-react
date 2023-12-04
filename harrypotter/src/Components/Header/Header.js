@@ -1,9 +1,9 @@
 import './header.css';
 import bkg_potter from '../../assets/images/harry-potter-v2.webp';
-import logo_gryffindor from '../../assets/images/blasons-01.png';
-import logo_hufflepuff from '../../assets/images/blasons-02.png';
-import logo_ravenclaw from '../../assets/images/blasons-03.png';
-import logo_slytherin from '../../assets/images/blasons-04.png';
+import logo_gryffindor from '../../assets/images/gryffindor.png';
+import logo_hufflepuff from '../../assets/images/hufflepuff.png';
+import logo_ravenclaw from '../../assets/images/ravenclaw.png';
+import logo_slytherin from '../../assets/images/slytherin.png';
 
 import { header_title, header_baseline } from './Datas.js';
 

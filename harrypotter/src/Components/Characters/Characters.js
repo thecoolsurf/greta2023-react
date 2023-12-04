@@ -4,7 +4,6 @@ import { useState } from "react";
 
 export const Characters = (props) => {
   const total = props.datas.name;
-  console.log(total);
   const incr = 200;
   const [index,setIndex] = useState(1);
   const [margX,setMargX] = useState(0);
@@ -13,9 +12,9 @@ export const Characters = (props) => {
       <div className="category">{props.url}</div>
       <div className="prev" onClick={() => {
         setIndex(0);
-        setIndex(index+1);
-        setMargX(-(index*incr));
-        console.log(index, margX);
+        setIndex(index-1);
+        setMargX(index*incr);
+        console.log('prev',index, margX);
 
       }}>
         <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
@@ -23,8 +22,8 @@ export const Characters = (props) => {
       <div className="next" onClick={() => {
         setIndex(0);
         setIndex(index+1);
-        setMargX(index*incr);
-        console.log(index,margX);
+        setMargX(-(index*incr));
+        console.log('next',index,margX);
       }}>
         <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
       </div>
