@@ -6,7 +6,13 @@
   font-family: 'lato';
   src: url('../../assets/fonts/lato/Lato-Regular.ttf');
 }
-
+@keyframes zoom {
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }}
 .header {
   position: relative;
   display: flex;
@@ -67,7 +73,7 @@
   min-height: 80px;
   box-sizing: border-box;
   overflow: hidden;
-  padding: 10px;
+  animation: zoom 1s ease;
 }
 
 .header .logo img {

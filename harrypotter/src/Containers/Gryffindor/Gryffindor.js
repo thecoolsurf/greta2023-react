@@ -3,12 +3,10 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Header } from '../../Components/Header/Header.js';
 import { Footer } from '../../Components/Footer/Footer.js';
-// import { Datas } from '../../Components/Characters/Datas.js';
 import { Characters } from '../../Components/Characters/Characters.js';
 
 export const Gryffindor = () => {
     const [datas, setDatas] = useState([]);
-    const [search, setSearch] = useState("");
     const location = useLocation();
     let url = location.pathname.toLowerCase().replace('/', '');
     useEffect(() => {
@@ -24,7 +22,6 @@ export const Gryffindor = () => {
     return (
         <div className={url}>
             <Header />
-            <input className="myinput" type="text" value={search} onChange={(e) => { setSearch(e.target.value); }} />
             <Characters datas={datas} />
             <section className="texte">
                 <h2>Blason de Gryffondor</h2>

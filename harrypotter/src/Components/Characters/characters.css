@@ -48,3 +48,11 @@
     line-height: 1;
     cursor: pointer;
 }
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

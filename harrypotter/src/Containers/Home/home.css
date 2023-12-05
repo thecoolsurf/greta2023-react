@@ -3,11 +3,21 @@
 }
 
 .home {
+  background-color: #041118;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
 .home .header {
-  height: 50vw;
+  height: 40vw;
+}
+
+.home .header .title {
+  top: 150px;
+}
+
+.home .header .logo {
+  width: 15vw;
+  height: 20vw;
 }

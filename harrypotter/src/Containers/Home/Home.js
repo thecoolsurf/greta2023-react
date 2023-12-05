@@ -9,8 +9,6 @@ export const Home = () => {
     return (
         <div className="home">
             <Header url={url} />
-            <section className="texte">
-            </section>
             <Footer />
         </div>
     )

@@ -1,21 +1,30 @@
 import "./card.css";
 import { useLocation } from 'react-router-dom';
-import { Modal } from '../Modal/Modal.js';
-import blason from '../../assets/images/gryffindor.png';
+
+import gryffindor from '../../assets/images/gryffindor.png';
+import hufflepuff from '../../assets/images/hufflepuff.png';
+import ravenclaw from '../../assets/images/ravenclaw.png';
+import slytherin from '../../assets/images/slytherin.png';
+import defaut from '../../assets/images/gryffindor.png';
 
 const Card = (props) => {
   const location = useLocation();
   let url = location.pathname.toLowerCase().replace('/', '');
-  // let img = props.character.image ? props.character.image : '../../assets/images/'+url+'.png';
-  let img = props.character.image ? props.character.image : blason;
+  function blason() {
+    switch (url) {
+      case 'gryffindor': return gryffindor;
+      case 'hufflepuff': return hufflepuff;
+      case 'ravenclaw': return ravenclaw;
+      case 'slytherin': return slytherin;
+      default: return defaut;
+    }
+  }
+  let img = props.character.image ? props.character.image : blason();
   return (
-    <div className="card" onClick={() => {
-      console.log('click');
-      return <Modal datas={props.character} />
-    }}>
+    <a className="card" href={'Character/'+props.character.id}>
       <img src={img} title={props.character.name} />
       <span className="legend">{props.character.name}</span>
-    </div>
+    </a>
   );
 };
 
