@@ -4,19 +4,9 @@
     flex-direction: row;
     align-content: flex-start;
     justify-content: flex-start;
+    width: 100%;
     max-width: 1280px;
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-
-.gryffindor .header {
-    height: 30vw;
-    max-height: 350px;
-}
-
-.gryffindor .texte {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
 }

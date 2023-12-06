@@ -11,14 +11,34 @@
 }
 
 .character .header {
-    height: 30vw;
-    max-height: 350px;
+    background: #000;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: clamp(30vh, 40vh, 80vh);
 }
 
+.header .title {
+    top: 50px;
+}
+
+.character .header .title h1 {
+    font-size: 8rem;
+}
+
+.character .header .title h3 {
+    font-size: 2rem;
+}
+
+/* ********************************************************** */
 .character .identity {
     display: flex;
     flex-wrap: wrap;
-    flex-direction:row;
+    flex-direction: row;
     align-content: flex-start;
     justify-content: flex-start;
     width: 100%;
@@ -40,24 +60,23 @@
 }
 
 .character .identity a:hover.return {
-    background: rgb(0,0,0,0.5);
+    background: rgb(0, 0, 0, 0.5);
     color: #FFF;
 }
 
 .modal {
     display: flex;
     flex-wrap: wrap;
-    flex-direction:row;
+    flex-direction: row;
     align-content: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     z-index: 100;
     width: 100%;
-    max-width: 1280px;
     height: 100vh;
-    background: rgb(0,0,0,0.8);
+    background: rgb(0, 0, 0, 0.8);
     transition: all 0.5s;
 }
 
@@ -79,12 +98,13 @@
 .hide {
     display: none;
 }
+
 /* *************************************************************** */
 
 .character .identity .images {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction:row;
+    flex-direction: row;
     align-content: flex-start;
     justify-content: flex-start;
     width: 50%;
@@ -112,35 +132,38 @@
 
 .character .identity .image .legend {
     position: absolute;
-    bottom:60px;
-    left:0px;
+    bottom: 60px;
+    left: 0px;
     width: 100%;
     box-sizing: border-box;
     color: white;
-    background: rgb(0,0,0,0.5);
+    background: rgb(0, 0, 0, 0.5);
     padding: 10px;
     font-size: 1.5rem;
 }
+
 /* ************************************************************** */
 
 .character .identity .infos {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction:row;
+    flex-direction: row;
     align-content: flex-start;
     justify-content: flex-start;
     width: 50%;
     text-align: left;
 }
+
 .character .identity .infos .group {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction:column;
+    flex-direction: column;
     align-content: flex-start;
     justify-content: flex-start;
     width: 100%;
     padding: 0 20px;
 }
+
 .character .identity .infos .legend {
     width: 100%;
     margin: 10px 0 0 0;
@@ -149,6 +172,7 @@
     font-size: 1rem;
     line-height: 1;
 }
+
 .character .identity .infos .info {
     width: 100%;
     padding: 0;

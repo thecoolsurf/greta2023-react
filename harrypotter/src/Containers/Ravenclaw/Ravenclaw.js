@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Header } from '../../Components/Header/Header.js';
 import { Footer } from '../../Components/Footer/Footer.js';
-import { Datas } from '../../Components/Characters/Datas.js';
 import { Characters } from '../../Components/Characters/Characters.js';
 
 export const Ravenclaw = () => {
@@ -23,7 +22,7 @@ export const Ravenclaw = () => {
     return (
         <div className={url}>
             <Header />
-            <Characters datas={datas} />
+            <Characters datas={datas} total={datas.length} />
             <section className="texte">
                 <h2>Blason de Ravenclaw</h2>
                 <p>Gryffondor (Gryffindor en anglais) vivait dans le village de Godric's Hollow, dans les plaines12, 

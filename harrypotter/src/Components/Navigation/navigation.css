@@ -1,8 +1,5 @@
 .nav {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  z-index: 1;
+  position: relative;
   background:#353535;
   display: flex;
   flex-wrap: wrap;

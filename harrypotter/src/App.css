@@ -10,6 +10,24 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.gryffindor .header .title,
+.hufflepuff .header .title,
+.ravenclaw .header .title,
+.slytherin .header .title {
+  top: 40px;
+}
+
+.gryffindor .header .title h3 {
+  font-size: 1.5rem;
+}
+
+.texte {
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
 }

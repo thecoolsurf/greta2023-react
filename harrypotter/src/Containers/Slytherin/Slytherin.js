@@ -23,7 +23,7 @@ export const Slytherin = () => {
     return (
         <div className={url}>
             <Header />
-            <Characters datas={datas} />
+            <Characters datas={datas} total={datas.length} />
             <section className="texte">
                 <h2>Blason de Slytherin</h2>
                 <p>Gryffondor (Gryffindor en anglais) vivait dans le village de Godric's Hollow, dans les plaines12, 
