@@ -1,3 +1,5 @@
+import './infos.css';
+
 export const Infos = (props) => {
     return (
         <div className="infos">

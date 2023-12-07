@@ -1,3 +1,18 @@
+@media screen and (max-width: 800px) {
+  .home .header {
+    max-height: 500px;
+  }
+  .home .header .title {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .home .header {
+    min-height: 400px;
+  }
+}
+
 body {
   background: #161616;
   padding: 0;

@@ -1,0 +1,29 @@
+.character .identity .infos {
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.character .identity .infos .group {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.character .identity .infos .legend {
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.character .identity .infos .info {
+    width: 100%;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+

@@ -7,11 +7,11 @@ export const Navigation = () => {
     let url = location.pathname.toLowerCase().replace('/', '');
     return (
         <div className="nav">
-            <Link to="/">Home</Link>
-            <Link to="Gryffindor">Gryffindor</Link>
-            <Link to="Hufflepuff">Hufflepuff</Link>
-            <Link to="Ravenclaw">Ravenclaw</Link>
-            <Link to="Slytherin">Slytherin</Link>
+            <Link className="link" to="/">Home</Link>
+            <Link className="link" to="Gryffindor">Gryffindor</Link>
+            <Link className="link" to="Hufflepuff">Hufflepuff</Link>
+            <Link className="link" to="Ravenclaw">Ravenclaw</Link>
+            <Link className="link" to="Slytherin">Slytherin</Link>
         </div>
     );
 }

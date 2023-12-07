@@ -11,7 +11,7 @@ import ravenclaw from '../../assets/images/ravenclaw.png';
 import slytherin from '../../assets/images/slytherin.png';
 
 export const Character = () => {
-    const [show,setShow] = useState('modal hide');
+    const [show, setShow] = useState('modal hide');
     const [datas, setDatas] = useState([]);
     const location = useLocation();
     const url = location.pathname.toLowerCase().split('/')[1];
@@ -44,19 +44,19 @@ export const Character = () => {
                 let img = item.image ? item.image : blason(cat);
                 return (
                     <section className="identity">
-                        <modal className={show} onClick={()=>setShow('modal hide')}>
+                        <modal className={show} onClick={() => setShow('modal hide')}>
                             <img src={img} title={item.name} />
                         </modal>
                         <div className="images">
-                            <div className="blason">
-                                <img src={blason(cat)} title={item.house} />
-                                <a className="return" href={'/' + item.house} target="_self">{'Return to '+item.house}</a>
-                            </div>
+                            <a className="return" href={'/' + item.house} target="_self">{'Return to ' + item.house}</a>
                             <div className="image">
-                                <img src={img} title={item.name} onClick={()=>{
+                                <img src={img} title={item.name} onClick={() => {
                                     setShow('modal show');
                                 }} />
                                 <div className="legend">{item.name}</div>
+                            </div>
+                            <div className="blason">
+                                <img src={blason(cat)} title={item.house} />
                             </div>
                         </div>
                         <Infos datas={item} />
