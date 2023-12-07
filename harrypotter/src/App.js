@@ -17,11 +17,11 @@ function App() {
         <Navigation menus={menus} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="Gryffindor" element={<Houses url={'gryffindor'} />} />
-          <Route path="Hufflepuff" element={<Houses url={'hufflepuff'} />} />
-          <Route path="Ravenclaw" element={<Houses url={'ravenclaw'} />} />
-          <Route path="Slytherin" element={<Houses url={'slytherin'} />} />
-          <Route path="Character/:id" element={<Character />} />
+          <Route path="/Gryffindor" element={<Houses url={'gryffindor'} />} />
+          <Route path="/Hufflepuff" element={<Houses url={'hufflepuff'} />} />
+          <Route path="/Ravenclaw" element={<Houses url={'ravenclaw'} />} />
+          <Route path="/Slytherin" element={<Houses url={'slytherin'} />} />
+          <Route path="/Character/:id" element={<Character />} />
         </Routes>
       </BrowserRouter>
     </div>
