@@ -1,7 +1,5 @@
 import './houses.css';
 import { useState, useEffect } from 'react';
-import { Header } from '../../Components/Header/Header.js';
-import { Footer } from '../../Components/Footer/Footer.js';
 import { Characters } from '../../Components/Characters/Characters.js';
 
 export const Houses = (props) => {
@@ -18,7 +16,6 @@ export const Houses = (props) => {
     }, []);
     return (
         <div className="houses">
-            <Header />
             <Characters datas={datas} total={datas.length} />
             <section className="texte">
                 <h2>Blason de {props.url}</h2>
@@ -26,7 +23,6 @@ export const Houses = (props) => {
                     et était le plus grand duelliste de son temps5. L'emblème des Gryffondor est le lion,
                     considéré comme la plus courageuse de toutes les créatures13.</p>
             </section>
-            <Footer />
         </div>
     )
 }

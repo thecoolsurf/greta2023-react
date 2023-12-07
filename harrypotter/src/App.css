@@ -1,15 +1,26 @@
 @media screen and (max-width: 800px) {
-  .home .header {
-    max-height: 500px;
+  .header {
+    height: clamp(300px, 50vh, 500px);
   }
-  .home .header .title {
-    padding: 0 50px;
+  .houses .header {
+    height: clamp(300px, 40vh, 500px);
+  }
+  .identity .images,
+  .identity .infos {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 801px) {
-  .home .header {
-    min-height: 400px;
+  .header {
+    height: clamp(400px, 80vh, 600px);
+  }
+  .houses .header {
+    height: clamp(300px, 50vh, 500px);
+  }
+  .identity .images,
+  .identity .infos {
+    width: 50%;
   }
 }
 
@@ -28,17 +39,6 @@ body {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-}
-
-.gryffindor .header .title,
-.hufflepuff .header .title,
-.ravenclaw .header .title,
-.slytherin .header .title {
-  top: 40px;
-}
-
-.gryffindor .header .title h3 {
-  font-size: 1.5rem;
 }
 
 .texte {
