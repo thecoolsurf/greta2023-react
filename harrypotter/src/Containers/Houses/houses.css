@@ -24,12 +24,13 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
-
 .search .house {
     font-size: 2rem;
     color: #FFF;
 }
-
+.search .house .category {
+    font-size: 1rem;
+}
 .search .searchbox {
     display: flex;
     flex-wrap: nowrap;

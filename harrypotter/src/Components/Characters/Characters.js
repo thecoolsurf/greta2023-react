@@ -10,12 +10,9 @@ export const Characters = (props) => {
   const [margX,setMargX] = useState(0);
   const [showPrev, setShowPrev] = useState('prev hide');
   const [showNext, setShowNext] = useState('next show');
-  const [loader, setloader] = useState('loader hide');
   return (
     <section className="characters">
-      { total == 0 ? ('<div className="loader"></div>') : '' }
-      <div className={loader}></div>
-      <div className="category">{total+ ' membres'}</div>
+      { total === 0 ? ('<div className="loader"></div>') : '' }
       <div className={showPrev} onClick={() => {
         setMargX(margX-(incr+marg));
         if (margX < (incr+marg)*2) setShowPrev('prev hide');
@@ -26,13 +23,13 @@ export const Characters = (props) => {
         setIndex(index+1);
         setMargX(margX+(incr+marg));
         if (margX > (incr+marg)) setShowPrev('prev show');
-        if (index == total-6) setShowNext('next hide');
+        if (index === total-6) setShowNext('next hide');
       }}>
         <i className="fa fa-chevron-circle-right" aria-hidden="true"></i>
       </div>
       <div className="wrapper" style={{marginLeft: -margX + 'px'}}>
         {props.datas.map((item,i) => {
-          return <Card id={i} character={item} />;
+          return <Card id={i} url={props.url} character={item} />;
         })}
       </div>
     </section>

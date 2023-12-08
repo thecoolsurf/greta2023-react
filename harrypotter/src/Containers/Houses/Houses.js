@@ -1,22 +1,25 @@
 import './houses.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { Characters } from '../../Components/Characters/Characters.js';
 
 export const Houses = (props) => {
-    const [datas, setDatas] = useState([]);
     const [search, setSearch] = useState('');
-    const [filterDatas, setFilterDatas] = useState('');
+    const [datas, setDatas] = useState([]);
+    const [filterDatas, setFilterDatas] = useState([]);
+
     /* resultat de l'API Harry Potter après filtrage serveur 'HOUSE' => 'Name' */
     useEffect(() => {
-        const fetchSearchData = async () => {
+        console.log(props.url);
+        const fetchData = async () => {
             const response = await fetch(
                 `https://hp-api.onrender.com/api/characters/house/${props.url}`
             );
             const result = await response.json();
             setDatas(result);
         };
-        fetchSearchData();
+        fetchData();
     }, []);
+
     /* filtre local depuis le tableau retourné par l'API Harry Potter */
     useEffect(() => {
         if (datas) {
@@ -25,18 +28,21 @@ export const Houses = (props) => {
             });
             setFilterDatas(searchResult);
         } else { setFilterDatas('') }
-    }, [search]);
-    const result = filterDatas ? filterDatas : datas;
+    }, []);
+    const result = search ? filterDatas : datas;
     return (
         <div className="houses">
             <div className="search">
-                <div className="house">{props.url}</div>
+                <div className="house">
+                    <div className="name">{props.url}</div>
+                    <div className="category">{datas.length+ ' membres'}</div>
+                </div>
                 <div className="searchbox">
-                    <input type="text" max="50" value={search} onChange={(e) => { setSearch(e.target.value) }} />
+                    <input type="text" max="50" value={search} name="search" onChange={(e) => { setSearch(e.target.value) }} />
                     <i className="fa fa-search"></i>
                 </div>
             </div>
-            <Characters datas={datas} total={datas.length} />
+            <Characters datas={result} url={props.url} />
             <section className="texte">
                 <h2>Blason de {props.url}</h2>
                 <p>Gryffondor (Gryffindor en anglais) vivait dans le village de Godric's Hollow, dans les plaines12,

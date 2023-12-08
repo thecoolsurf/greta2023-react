@@ -10,16 +10,19 @@ export const Navigation = (props) => {
     return (
         <div className="nav">
             <div className="slider" onClick={()=>{
-                slidedown == 'slidedown show' ? setSlidedown('slidedown hide') : setSlidedown('slidedown show');
-            }}><i className="fa fa-bars"></i></div>
-            <Link className="link nav-home" to="/" onClick={()=>{
+                slidedown === 'slidedown show' ? setSlidedown('slidedown hide') : setSlidedown('slidedown show');
+            }}><i className="fa fa-bars"></i>
+            </div>
+            <a className="link nav-home" href="/" onClick={()=>{
                 width < 650 ? setSlidedown('slidedown hide') : setSlidedown('slidedown show');
-            }}><i className="fa fa-home"></i></Link>
+            }}><i className="fa fa-home"></i>
+l            </a>
             <div className={slidedown}>
                 {props.menus.map((item, i) => {
                     const active = item.toLowerCase() === url ? 'link active' : 'link';
                     return (
-                        <Link className={active} to={item}>{item}</Link>
+                        <a className={active} href={item}>{item}</a>
+                        // <Link className={active} to={item}>{item}</Link>
                     )
                 })}
             </div>
