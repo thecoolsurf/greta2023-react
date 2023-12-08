@@ -5,9 +5,18 @@
   .houses .header {
     height: clamp(300px, 40vh, 500px);
   }
+  .slider {
+    display: block;
+  }
   .identity .images,
   .identity .infos {
     width: 100%;
+  }
+  .search {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 
@@ -18,9 +27,18 @@
   .houses .header {
     height: clamp(300px, 50vh, 500px);
   }
+  .slider {
+    display: none;
+  }
   .identity .images,
   .identity .infos {
     width: 50%;
+  }
+  .search {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 

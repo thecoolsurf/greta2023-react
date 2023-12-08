@@ -7,7 +7,6 @@ export const Navigation = (props) => {
     const location = useLocation()
     let url = location.pathname.toLowerCase().replace('/', '');
     let width = window.innerWidth;
-    console.log(width);
     return (
         <div className="nav">
             <div className="slider" onClick={()=>{
