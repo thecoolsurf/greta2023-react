@@ -28,7 +28,7 @@ export const Houses = (props) => {
             });
             setFilterDatas(searchResult);
         } else { setFilterDatas('') }
-    }, []);
+    }, [search]);
     const result = search ? filterDatas : datas;
     return (
         <div className="houses">

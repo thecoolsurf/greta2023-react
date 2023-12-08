@@ -16,7 +16,7 @@ export const Navigation = (props) => {
             <a className="link nav-home" href="/" onClick={()=>{
                 width < 650 ? setSlidedown('slidedown hide') : setSlidedown('slidedown show');
             }}><i className="fa fa-home"></i>
-l            </a>
+            </a>
             <div className={slidedown}>
                 {props.menus.map((item, i) => {
                     const active = item.toLowerCase() === url ? 'link active' : 'link';
