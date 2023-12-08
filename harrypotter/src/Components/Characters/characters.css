@@ -11,7 +11,7 @@
 
 .characters .category {
     margin: 10px 0 10px 20px;
-    font-size: 2rem;
+    font-size: 1.3rem;
     text-transform: capitalize;
     color: #FFF;
 }
@@ -43,7 +43,7 @@
     top: 0px;
     width: 50px;
     height: 100%;
-    padding: 120px 0 0 0;
+    padding: 140px 0 0 0;
     box-sizing: border-box;
     color: #FFF;
     font-size: 3rem;

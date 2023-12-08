@@ -15,8 +15,8 @@
   .search {
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -41,6 +41,38 @@
     align-items: center;
   }
 }
+
+.loader {
+  background: #fc3;
+  position: absolute;
+  bottom: 20px;
+  left: 48%;
+  z-index: 1000;
+  width: 40px;
+  height: 30px;
+  padding: 4px 2px 5px 2px;
+  border-radius: 5px;
+  text-align: center
+}
+
+.loader i {
+  display: block;
+  font-size: 2em;
+  line-height: 1;
+  color: #000;
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite
+}
+
+@keyframes spin {
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg)
+  }
+}
+
+/* ************************************************************************* */
 
 body {
   background: #161616;

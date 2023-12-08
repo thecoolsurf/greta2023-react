@@ -4,7 +4,7 @@ import { Characters } from '../../Components/Characters/Characters.js';
 
 export const Houses = (props) => {
     const [datas, setDatas] = useState([]);
-    const [search, setSearch] = useState([]);
+    const [search, setSearch] = useState('');
     const [filterDatas, setFilterDatas] = useState('');
     /* resultat de l'API Harry Potter après filtrage serveur 'HOUSE' => 'Name' */
     useEffect(() => {
@@ -17,7 +17,7 @@ export const Houses = (props) => {
         };
         fetchSearchData();
     }, []);
-    /* flitre local depuis le tableau retourné par l'API Harry Potter */
+    /* filtre local depuis le tableau retourné par l'API Harry Potter */
     useEffect(() => {
         if (datas) {
             const searchResult = datas.filter((el) => {
@@ -26,6 +26,7 @@ export const Houses = (props) => {
             setFilterDatas(searchResult);
         } else { setFilterDatas('') }
     }, [search]);
+    const result = filterDatas ? filterDatas : datas;
     return (
         <div className="houses">
             <div className="search">
@@ -35,7 +36,7 @@ export const Houses = (props) => {
                     <i className="fa fa-search"></i>
                 </div>
             </div>
-            <Characters datas={filterDatas || datas} total={datas.length} />
+            <Characters datas={datas} total={datas.length} />
             <section className="texte">
                 <h2>Blason de {props.url}</h2>
                 <p>Gryffondor (Gryffindor en anglais) vivait dans le village de Godric's Hollow, dans les plaines12,
