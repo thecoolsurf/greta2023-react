@@ -1,28 +1,101 @@
+@media screen and (max-width: 650px) {
+  .nav {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav .slidedown {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    z-index: 1;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav .slidedown {
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .nav {
   position: relative;
-  background:#353535;
+  background: #353535;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content:center;
-  align-items:flex-start;
-  align-content: flex-start;
   width: 100%;
-  max-width: 1280px;
-  padding: 10px 0 0 0;
+  padding: 10px;
   box-sizing: border-box;
 }
+
 .nav .link {
-  background: none;
+  font-size: 1.2rem;
   color: #FFF;
   text-decoration: none;
   margin: 0 5px 10px 5px;
   padding: 5px 10px;
-  border: solid 1px #FFF;
-  border-radius: 5px;
   cursor: pointer;
 }
+
 .nav .link:hover {
   background: #FFF;
-  color:#000;
+  color: #000;
+}
+
+.nav .active {
+  background: #FFF;
+  color: #000;
+}
+
+.nav .nav-home {
+  font-size: 1.5rem;
+  line-height: 2;
+  margin: 2px 0 0 0;
+}
+
+.nav .slider {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #FFF;
+  border-radius: 5px;
+  border: solid 1px #FFF;
+}
+
+.nav .slider:hover {
+  background: #FFF;
+  color: #000;
+}
+
+.slidedown {
+  background: #353535;
+  transition: all 1s;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
 }
